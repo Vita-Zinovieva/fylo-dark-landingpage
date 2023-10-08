@@ -1,0 +1,73 @@
+.respond{
+   padding: 50px 30px 300px 30px ;
+  position: relative;
+}
+
+.respond-container img {
+  padding-left: 140px;
+  @media screen and (width > 766px){ 
+    padding-left: 0px;
+  }
+  
+}
+.respond-item {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap:30px;
+  margin: auto;
+  @media screen and (width > 766px){ 
+    flex-direction: row;
+    gap:20px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.respond-user {
+  cursor: pointer;
+  background-color: $testimonialsbackground;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 6%;
+  &:hover {
+    border-radius: 20px;
+    box-shadow: 20px 20px 10px 0px rgba(109, 221, 194, 0.35);
+  }
+  @media screen and (width > 766px){ 
+    padding: 3%;
+    width: 32%;
+  }
+}
+.respond-fylo,
+.user-name,
+.user-founder {
+  font-family:'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+  color: $white;
+  line-height: 1.5;
+ 
+}
+.user {
+  display: flex;
+  padding-top: 30px;
+  gap: 30px;
+  
+}
+.user img {
+width: 60px;
+height: 60px;
+border-radius: 30px;
+padding-left: 0px;
+}
+.user-name {
+  font-weight: 700;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.user-founder {
+  font-weight: 400;
+  font-size: 14px;
+  
+}

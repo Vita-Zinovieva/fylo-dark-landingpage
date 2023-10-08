@@ -1,0 +1,112 @@
+.footer{
+  //width: 100%;
+  height: auto;
+  padding: 300px 30px 50px 30px ;
+  @media screen and (width > 766px) { 
+    padding: 300px 100px 50px 100px;
+    
+  }
+
+}
+.footer-flex{
+  padding-left: 30px;
+  @media screen and (width > 766px) { 
+    display: flex;
+    align-items: flex-start;
+    max-height: 190px;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.footer-contacts {
+  padding: 30px 0;
+  max-width: 80%;
+  @media screen and (width > 766px) { 
+    max-height: 150px;
+    gap: 10%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat( 2, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 0;
+    
+  }
+}
+.footer-lorem{
+  width: 91%;
+  color: $white;
+  height: auto;
+  @media screen and (width > 766px) { 
+    line-height: 1.5;
+  }
+}
+.footer-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  @media screen and (width > 766px) { 
+    &:first-child{
+      grid-column-start: 1;
+      grid-row-end: 3;
+      grid-row-start: 1;
+    }
+  }
+}
+.footer-menu {
+  @media screen and (width > 766px) { 
+  display: flex;
+  column-gap: 40%;}
+}
+
+.footer-menu-1 {
+  padding-bottom: 30px;
+}
+
+.phone,
+.email,
+.menu-item,
+.footer-lorem {
+  color: $white;
+  font-family: 'Raleway';
+  font-size: 14px;
+  @media screen and (width > 766px) { 
+    font-size: 16px;
+  }
+}
+.footer-icons {
+  display: flex;
+  padding: 16% 30% 0;
+  justify-content: center;
+  @media screen and (width > 766px) { 
+    padding:  0;
+  }
+  
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  fill: $white;
+  cursor: pointer;
+  margin-right: 10px;
+  &:hover{
+    border-radius: 8px;
+    border: none;
+    background-color:  rgba(109, 221, 194, 0.35);
+    fill: $cyan;
+    box-shadow: 5px 5px 5px 0px rgba(109, 221, 194, 0.35);
+    
+  }
+  @media screen and (width > 766px) { 
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+}
+footer img {
+  padding-left: 30px;
+  @media screen and (width > 766px) { 
+  margin-bottom: 30px;
+  padding-left: 0px;
+}}

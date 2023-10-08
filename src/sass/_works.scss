@@ -1,0 +1,61 @@
+.works {
+  padding: 50px 30px;
+  @media screen and (width > 766px){ 
+    padding: 50px 30px;
+  }
+}
+
+.works-desktop-flex{
+  width: 65%;
+  @media screen and (width > 766px){ 
+    
+  }
+}
+.works-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  @media screen and (width > 766px){ 
+    flex-direction: row;
+  }
+}
+.works .cards-title {
+  max-width: 80%;
+  text-align: start;
+  padding: 50px 0 30px 0;
+}
+.works .main-text {
+ width: 80%;
+  text-align: start;
+  padding-bottom: 30px;
+  @media screen and (width > 766px){ 
+    width: 90%;
+  }
+}
+.works-send {
+  display: inline-flex;
+  gap: 10px;
+  border-bottom: 2px solid $cyan;
+  
+}
+.works-send p{
+  color: $cyan;
+  font-size: 14px;
+  font-family:'Open Sans';
+  font-weight: 400;
+
+}
+
+.button-send {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: $cyan;
+  margin: auto;
+  cursor: pointer;
+}
+.button-send-arrow{
+  width: 15px;
+  height: 15px;
+  margin: auto;
+}

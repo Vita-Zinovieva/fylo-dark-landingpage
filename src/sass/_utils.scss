@@ -1,0 +1,42 @@
+$mainbackground: hsl(218, 28%, 13%);
+$white: hsl(0, 0%, 100%);
+$testimonialsbackground: hsl(219, 30%, 18%); //rgb(32, 42, 60);
+$dark-blue: hsl(217, 27%, 15%); //rgb(28, 36, 49)
+$primary-text-color:black;
+$cyan : hsl(176, 68%, 64%); //(inside call-to-action gradient)
+$darkFooter : hsl(215, 52%, 9%);  //(footer background) rgb(11, 21, 35); 
+$lightRed : hsl(0, 100%, 63%); //(error)
+$blue :hsl(198, 60%, 50%); //(inside call-to-action gradient)
+$mobileMax: 765px;
+$desktop: 1440px;
+
+body {
+  flex-direction: column;
+  display: flex;
+  background: linear-gradient(to top, #0B1523 27%, #1C2431 57%, #202A3C 71%) no-repeat;
+  @media screen and (width > 1441px) {
+    margin: auto 30%;
+  }
+}
+
+._container {
+  @media screen and (width: $mobileMax) {
+    max-width: calc(705px + 60px);
+    padding: 50px 30px;
+    
+  }
+
+  @media screen and (width > 766px) {
+    max-width: calc(1280px + 160px);
+    padding: 0px 30px;
+  }
+
+}
+//header
+.main-text {
+  font-family:'Raleway';
+  font-weight: 400;
+  font-size: 16px;
+  color: $white;
+  line-height: 1.5;
+}
